@@ -96,6 +96,21 @@ trait SurveysTrait
 				$this->createRequest('GET', sprintf('surveys/%d', $surveyId))
 			);
 		}
+    }
+
+	/**
+	* getSurveyRollups - Get rollups on a survey
+	*
+	* @param int $surveyId - See survey ID to use
+    * @param array $filters - See API docs for available fields
+	*
+	* @return @see Client::sendRequest
+	*/
+	public function getSurveyRollups($surveyId, array $filters = [])
+	{
+		return $this->sendRequest(
+			$this->createRequest('GET', sprintf('surveys/%d/rollups', $surveyId))
+		);
 	}
 
 	/**
