@@ -102,7 +102,7 @@ trait SurveysTrait
 	* getSurveyRollups - Get rollups on a survey
 	*
 	* @param int $surveyId - See survey ID to use
-    * @param array $filters - See API docs for available fields
+ 	* @param array $filters - See API docs for available fields
 	*
 	* @return @see Client::sendRequest
 	*/
